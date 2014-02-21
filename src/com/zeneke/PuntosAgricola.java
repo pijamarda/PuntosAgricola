@@ -30,9 +30,9 @@ import android.widget.TextView;
 
 public class PuntosAgricola extends Activity 
 {
-	String maderas;
-    String adobes;
-    String juncos;
+	String maderas="0";
+    String adobes="0";
+    String juncos="0";
     public static final String ARCHIVO_RANKING = "ranking";
     boolean hogar=false;
     boolean cocina=false;

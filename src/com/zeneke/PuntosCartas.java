@@ -7,7 +7,9 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.SeekBar;
 import android.widget.TextView;
+import android.widget.SeekBar.OnSeekBarChangeListener;
 
 public class PuntosCartas extends Activity
 {
@@ -21,6 +23,18 @@ public class PuntosCartas extends Activity
 	boolean cesteria;
 	String maderas,adobes,juncos;
 	boolean pulsadoBoton;
+
+    private SeekBar seekBarMadera;
+    private SeekBar seekBarAdobe;
+    private SeekBar seekBarJunco;
+    private TextView txtPuntosMadera;
+    private TextView txtPuntosAdobe;
+    private TextView txtPuntosJunco;
+
+    private int numMadera = 0;
+    private int numAdobe = 0;
+    private int numJunco = 0;
+
 	
 	@Override
 	public void onCreate(Bundle savedInstanceState)
@@ -57,10 +71,84 @@ public class PuntosCartas extends Activity
 		maderas = sender.getExtras().getString("maderas");
 		adobes = sender.getExtras().getString("adobes");
 		juncos = sender.getExtras().getString("juncos");
-		
-		((TextView)findViewById(R.id.Txtmadera)).setText(maderas);
-    	((TextView)findViewById(R.id.Txtadobe)).setText(adobes);
-    	((TextView)findViewById(R.id.Txtjunco)).setText(juncos);
+
+        numMadera = Integer.parseInt(maderas);
+        numAdobe = Integer.parseInt(adobes);
+        numJunco = Integer.parseInt(juncos);
+		((TextView)findViewById(R.id.TxtPuntosMadera)).setText(maderas);
+    	((TextView)findViewById(R.id.TxtPuntosAdobe)).setText(adobes);
+    	((TextView)findViewById(R.id.TxtPuntosJunco)).setText(juncos);
+
+        seekBarMadera = (SeekBar) findViewById(R.id.seekBarMadera);
+        seekBarAdobe = (SeekBar) findViewById(R.id.seekBarAdobe);
+        seekBarJunco = (SeekBar) findViewById(R.id.seekBarJunco);
+        txtPuntosMadera = (TextView)findViewById(R.id.TxtPuntosMadera);
+        txtPuntosAdobe = (TextView)findViewById(R.id.TxtPuntosAdobe);
+        txtPuntosJunco = (TextView)findViewById(R.id.TxtPuntosJunco);
+
+        seekBarMadera.setOnSeekBarChangeListener(
+                new OnSeekBarChangeListener()
+                {
+                    int progress = 0;
+                    @Override
+                    public void onProgressChanged(SeekBar seekBar,
+                                                  int progresValue, boolean fromUser) {
+                        progress = progresValue;
+                        txtPuntosMadera.setText(" "+progress+" m");
+                        numMadera = progresValue;
+                    }
+                    @Override
+                    public void onStartTrackingTouch(SeekBar seekBar) {
+                        // if you want to do anything at the start of touching the seekbar
+                    }
+                    @Override
+                    public void onStopTrackingTouch(SeekBar seekBar) {
+                    }
+                });
+
+        seekBarAdobe.setOnSeekBarChangeListener(
+                new OnSeekBarChangeListener()
+                {
+                    int progress = 0;
+                    @Override
+                    public void onProgressChanged(SeekBar seekBar,
+                                                  int progresValue, boolean fromUser) {
+                        progress = progresValue;
+                        txtPuntosAdobe.setText(" "+progress+" a");
+                        numAdobe = progresValue;
+                    }
+                    @Override
+                    public void onStartTrackingTouch(SeekBar seekBar) {
+                        // if you want to do anything at the start of touching the seekbar
+                    }
+                    @Override
+                    public void onStopTrackingTouch(SeekBar seekBar) {
+                    }
+                });
+
+        seekBarJunco.setOnSeekBarChangeListener(
+                new OnSeekBarChangeListener()
+                {
+                    int progress = 0;
+                    @Override
+                    public void onProgressChanged(SeekBar seekBar,
+                                                  int progresValue, boolean fromUser) {
+                        progress = progresValue;
+                        txtPuntosJunco.setText(" "+progress+" j");
+                        numJunco = progresValue;
+                    }
+                    @Override
+                    public void onStartTrackingTouch(SeekBar seekBar) {
+                        // if you want to do anything at the start of touching the seekbar
+                    }
+                    @Override
+                    public void onStopTrackingTouch(SeekBar seekBar) {
+                    }
+                });
+
+
+
+
 	    
 	    botonCartas.setOnClickListener(new OnClickListener() {
 	    	@Override
@@ -98,15 +186,13 @@ public class PuntosCartas extends Activity
 	            checkBox = (CheckBox) findViewById(R.id.checkBoxEbanisteria);
 	            if (ebanisteria=checkBox.isChecked()) 
 	            {
-	            	String maderas1 = ((TextView)findViewById(R.id.Txtmadera)).getText().toString();
-	            	if (!maderas1.equals(""))
+	            	if (numMadera != 0)
 	            	{
-		            	int madera = Integer.parseInt(maderas1);
-		            	if (madera >= 7)
+		            	if (numMadera >= 7)
 		            		puntos += 3;
-		            	else if (madera>=5)
+		            	else if (numMadera>=5)
 		            		puntos += 2;
-		            	else if (madera>=3)
+		            	else if (numMadera>=3)
 		            		puntos += 1;
 	            	}
 	            	puntos += 2;
@@ -114,15 +200,13 @@ public class PuntosCartas extends Activity
 	            checkBox = (CheckBox) findViewById(R.id.checkBoxAlfareria);
 	            if (alfareria=checkBox.isChecked()) 
 	            {
-	            	String adobes1 = ((TextView)findViewById(R.id.Txtadobe)).getText().toString();
-	            	if (!adobes1.equals(""))
+	            	if (numAdobe != 0)
 	            	{
-			    		int adobe = Integer.parseInt(adobes1);
-		            	if (adobe >= 7)
+		            	if (numAdobe >= 7)
 		            		puntos += 3;
-		            	else if (adobe>=5)
+		            	else if (numAdobe>=5)
 		            		puntos += 2;
-		            	else if (adobe>=3)
+		            	else if (numAdobe>=3)
 		            		puntos += 1;           	
 	            	}
 	            	puntos += 2;
@@ -130,23 +214,21 @@ public class PuntosCartas extends Activity
 	            checkBox = (CheckBox) findViewById(R.id.checkBoxCesteria);
 	            if (cesteria=checkBox.isChecked()) 
 	            {
-	            	String juncos1 = ((TextView)findViewById(R.id.Txtjunco)).getText().toString();
-	            	if (!juncos1.equals(""))
+	            	if (numJunco != 0)
 	            	{
-			    		int junco = Integer.parseInt(juncos1);
-		            	if (junco >= 5)
+		            	if (numJunco >= 5)
 		            		puntos += 3;
-		            	else if (junco>=4)
+		            	else if (numJunco>=4)
 		            		puntos += 2;
-		            	else if (junco>=2)
+		            	else if (numJunco>=2)
 		            		puntos += 1;           	
 	            	}
 	            	puntos += 2;
 	            }
 	    		
-	            maderas = ((TextView)findViewById(R.id.Txtmadera)).getText().toString();
-	            adobes = ((TextView)findViewById(R.id.Txtadobe)).getText().toString();
-	            juncos = ((TextView)findViewById(R.id.Txtjunco)).getText().toString();
+	            maderas = Integer.toString(numMadera);
+	            adobes = Integer.toString(numAdobe);
+	            juncos = Integer.toString(numJunco);
 	            
 	    		Intent intent = new Intent();	    		
 	    		intent.putExtra("puntos", Integer.toString(puntos));

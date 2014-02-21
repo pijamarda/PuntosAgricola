@@ -11,44 +11,47 @@
 	    android:layout_height="wrap_content">   
 	
 		<TextView 
-	    	android:text="@string/madera" 
-	    	android:id="@+id/textView1" 
-	    	android:layout_width="wrap_content" 
+	    	android:text="@string/madera"
+            android:id="@+id/TxtMadera"
+            android:layout_width="wrap_content"
 	    	android:layout_height="wrap_content">
-	    </TextView>	
-		<EditText
-			android:id="@+id/Txtmadera"
-			android:numeric="integer"			
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-		/>
-		<TextView 
-	    	android:text="@string/adobe" 
-	    	android:id="@+id/textView1" 
-	    	android:layout_width="wrap_content" 
-	    	android:layout_height="wrap_content">
-	    </TextView>	
-		<EditText
-			android:id="@+id/Txtadobe"
-			android:numeric="integer"	
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-		/>
-		<TextView 
-	    	android:text="@string/juncos" 
-	    	android:id="@+id/textView1" 
-	    	android:layout_width="wrap_content" 
-	    	android:layout_height="wrap_content">
-	    </TextView>	
-		<EditText
-			android:id="@+id/Txtjunco"
+	    </TextView>
+        <SeekBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/seekBarMadera"
+                android:layout_weight="1"
+                android:progress="0"
+                android:max="7"/>
+        <TextView
+			android:id="@+id/TxtPuntosMadera"
 			android:numeric="integer"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-		/>
-	</LinearLayout>   		
-   	
-   	<LinearLayout 
+            android:hint="0"/>
+	</LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent"
+                  android:orientation="horizontal" android:layout_height="wrap_content" android:id="@+id/linearLayout">
+        <TextView android:text="@string/adobe" android:id="@+id/TxtAdobe" android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"/>
+        <SeekBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/seekBarAdobe" android:layout_weight="1" android:progress="0" android:max="7"/>
+        <TextView android:id="@+id/TxtPuntosAdobe" android:numeric="integer" android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" android:hint="0"/>
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent"
+                  android:orientation="horizontal" android:layout_height="wrap_content" android:id="@+id/linearLayout2">
+        <TextView android:text="@string/juncos" android:id="@+id/TxtJunco" android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"/>
+        <SeekBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/seekBarJunco"
+                 android:layout_weight="1" android:progress="0" android:max="5"/>
+        <CheckedTextView android:id="@+id/TxtPuntosJunco" android:numeric="integer" android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" android:hint="0"/>
+    </LinearLayout>
+    <LinearLayout
 		xmlns:android="http://schemas.android.com/apk/res/android"
 	    android:layout_width="fill_parent"
 	    android:orientation="horizontal" 
@@ -56,7 +59,7 @@
 	    
 	    <TextView 
 	    	android:text="@string/hogar" 
-	    	android:id="@+id/textView1" 
+	    	android:id="@+id/Txtmadera"
 	    	android:layout_width="wrap_content" 
 	    	android:layout_height="wrap_content">
 	    </TextView>
@@ -69,7 +72,7 @@
 	    
 	    <TextView 
 	    	android:text="@string/cocina" 
-	    	android:id="@+id/textView1" 
+	    	android:id="@+id/Txtmadera"
 	    	android:layout_width="wrap_content" 
 	    	android:layout_height="wrap_content">
 	    </TextView>
@@ -82,7 +85,7 @@
 	    
 	    <TextView 
 	    	android:text="@string/pozo" 
-	    	android:id="@+id/textView1" 
+	    	android:id="@+id/Txtmadera"
 	    	android:layout_width="wrap_content" 
 	    	android:layout_height="wrap_content">
 	    </TextView>
@@ -90,8 +93,8 @@
 	    	android:id="@+id/checkBoxPozo" 
 	    	android:layout_width="wrap_content" 
 	    	android:layout_height="wrap_content">
-	    </CheckBox>	
-	</LinearLayout>	
+	    </CheckBox>
+    </LinearLayout>
    	<LinearLayout 
 		xmlns:android="http://schemas.android.com/apk/res/android"
 	    android:layout_width="fill_parent"
@@ -101,7 +104,7 @@
 	        
 	    <TextView 
 	    	android:text="@string/hornoPiedra" 
-	    	android:id="@+id/textView1" 
+	    	android:id="@+id/Txtmadera"
 	    	android:layout_width="wrap_content" 
 	    	android:layout_height="wrap_content">
 	    </TextView>
@@ -113,7 +116,7 @@
 	    
 	    <TextView 
 	    	android:text="@string/hornoAdobe" 
-	    	android:id="@+id/textView1" 
+	    	android:id="@+id/Txtmadera"
 	    	android:layout_width="wrap_content" 
 	    	android:layout_height="wrap_content">
 	    </TextView>
@@ -131,7 +134,7 @@
 	    
 	    <TextView 
 	    	android:text="@string/ebanisteria" 
-	    	android:id="@+id/textView1" 
+	    	android:id="@+id/Txtmadera"
 	    	android:layout_width="wrap_content" 
 	    	android:layout_height="wrap_content">
 	    </TextView>
@@ -144,7 +147,7 @@
 	    
 	    <TextView 
 	    	android:text="@string/alfareria" 
-	    	android:id="@+id/textView1" 
+	    	android:id="@+id/Txtmadera"
 	    	android:layout_width="wrap_content" 
 	    	android:layout_height="wrap_content">
 	    </TextView>
@@ -157,7 +160,7 @@
 	    
 	    <TextView 
 	    	android:text="@string/cesteria" 
-	    	android:id="@+id/textView1" 
+	    	android:id="@+id/Txtmadera"
 	    	android:layout_width="wrap_content" 
 	    	android:layout_height="wrap_content">
 	    </TextView>
