@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>    
+    <string name="app_name">Agricola Points</string>
+    <string name="tipo_habitaciones">Choose a type</string>
+    <string-array name="lista_habitaciones">
+        <item>Wood</item>
+        <item>Clay</item>
+        <item>Stone</item>        
+    </string-array>
+    <string name="madera">Wood</string>
+    <string name="adobe">Clay</string>
+    <string name="piedra">Stone</string>
+    <string name="juncos">Reed</string>
+    <string name="puntos">Points : </string>
+    <string name="ranking">Rank</string>
+    <string name="guardarPuntuacion">Save points</string>
+    <string name="vacas">Cattle</string>
+    <string name="ovejas">Sheep</string>
+    <string name="jabalis">Wild Boar</string>
+    <string name="cereales">Grain</string>
+    <string name="hortalizas">Vegetables</string>
+    <string name="campos">Fields</string>
+    <string name="pastos">Pastures</string>
+    <string name="libres">Empty</string>
+    <string name="establos">Stables</string>
+    <string name="personas">People</string>
+    <string name="mendigos">Begging</string>
+    <string name="casa">House</string>
+    <string name="calcularCartas">Calculate cards</string>
+    <string name="hogar">Fireplaces</string>
+    <string name="cocina">Cooking Hearths</string>
+    <string name="pozo">Well</string>
+    <string name="hornoPiedra">Stone Oven</string>
+    <string name="hornoAdobe">Clay Oven</string>
+    <string name="ebanisteria">Joinery</string>
+    <string name="alfareria">Pottery</string>
+    <string name="cesteria">Basketmaker</string>
+    <string name="nombre">Name?</string>
+    <string name="cancelar">Cancel</string>
+    <string name="tituloRanking">"Name                      Points"</string>
+    <string name="salir">Exit</string>
+    <string name="resumen_nombre">Name</string>
+    <string name="resumen_nombre_vacio"> </string>
+    <string name="resumen_numero_vacio">0</string>
+    <string name="resumen_campos">Fields</string>
+    <string name="resumen_pastos">Pastures</string>
+    <string name="resumen_puntos_texto">Point Resumen</string>
+    <string name="resumen_cereales">Grain</string>
+    <string name="resumen_hortalizas">Vegetables</string>
+    <string name="resumen_ovejas">Sheep</string>
+    <string name="resumen_jabalis">Boar</string>
+    <string name="resumen_vacas">Cattle</string>
+    <string name="resumen_libres">Empty</string>
+    <string name="resumen_establos">Stables</string>
+    <string name="resumen_habitaciones">House</string>
+    <string name="resumen_personas">People</string>
+    <string name="resumen_cartas">Cards</string>
+    <string name="resumen_mendigos">Begging</string>
+    <string name="resumen_puntos">Points</string>
+           
+</resources>

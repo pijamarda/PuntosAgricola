@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="size_texto_nombres">13sp</dimen>
+    <dimen name="size_texto">14sp</dimen>
+    <dimen name="size_texto_principal">15sp</dimen>
+    <dimen name="anchura_resumen_titulo">90dp</dimen>
+    <dimen name="anchura_resumen_nombre">42dp</dimen>    
+    <dimen name="anchura_resumen">42dp</dimen>
+</resources>

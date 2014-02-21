@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>    
+    <string name="app_name">Agricola Puntos</string>
+    <string name="tipo_habitaciones">Elige un tipo</string>
+    <string-array name="lista_habitaciones">
+        <item>Madera</item>
+        <item>Adobe</item>
+        <item>Piedra</item>        
+    </string-array>
+    <string name="madera">Madera</string>
+    <string name="adobe">Adobe</string>
+    <string name="piedra">Piedra</string>
+    <string name="juncos">Juncos</string>
+    <string name="puntos">Puntos : </string>
+    <string name="ranking">Ranking</string>
+    <string name="guardarPuntuacion">Guardar puntuacion</string>
+    <string name="vacas">Vacas</string>
+    <string name="ovejas">Ovejas</string>
+    <string name="jabalis">Jabalis</string>
+    <string name="cereales">Cereales</string>
+    <string name="hortalizas">Hortalizas</string>
+    <string name="campos">Campos</string>
+    <string name="pastos">Pastos</string>
+    <string name="libres">Libres</string>
+    <string name="establos">Establos</string>
+    <string name="personas">Personas</string>
+    <string name="mendigos">Mendigos</string>
+    <string name="casa">Casa</string>
+    <string name="calcularCartas">Calcular cartas</string>
+    <string name="hogar">Hogar</string>
+    <string name="cocina">Cocina</string>
+    <string name="pozo">Pozo</string>
+    <string name="hornoPiedra">Horno de Piedra</string>
+    <string name="hornoAdobe">Horno de Adobe</string>
+    <string name="ebanisteria">Ebanisteria</string>
+    <string name="alfareria">Alfareria</string>
+    <string name="cesteria">Cesteria</string>
+    <string name="nombre">¿Nombre?</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="tituloRanking">"Nombre                    Puntos"</string>
+    <string name="salir">Salir</string>
+    <string name="resumen_nombre">Nombre</string>
+    <string name="resumen_nombre_vacio"> </string>
+    <string name="resumen_numero_vacio">0</string>
+    <string name="resumen_campos">Campos</string>
+    <string name="resumen_pastos">Pastos</string>
+    <string name="resumen_puntos_texto">Cuadro Resumen</string>
+    <string name="resumen_cereales">Cereales</string>
+    <string name="resumen_hortalizas">Hortalizas</string>
+    <string name="resumen_ovejas">Ovejas</string>
+    <string name="resumen_jabalis">Jabalis</string>
+    <string name="resumen_vacas">Vacas</string>
+    <string name="resumen_libres">Libres</string>
+    <string name="resumen_establos">Establos</string>
+    <string name="resumen_habitaciones">Habitaciones</string>
+    <string name="resumen_personas">Personas</string>
+    <string name="resumen_cartas">Cartas</string>
+    <string name="resumen_mendigos">Mendigos</string>
+    <string name="resumen_puntos">Puntos</string>
+           
+</resources>

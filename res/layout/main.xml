@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:orientation="vertical" 
+    android:layout_height="fill_parent">
+    <LinearLayout 
+		xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent"
+	    android:orientation="horizontal"
+	    android:background="#ff0000ff" 
+	    android:layout_height="wrap_content">   	
+		<TextView 
+	    	android:text="@string/puntos" 
+	    	android:id="@+id/txt1" 
+	    	android:layout_width="wrap_content" 
+	    	android:layout_height="wrap_content"
+	    	android:textSize="20sp"
+	    	android:textColor="#FFFFFFFF">
+	    </TextView>
+	    <TextView 
+	    	android:text="0" 
+	    	android:id="@+id/tpuntos" 
+	    	android:layout_width="wrap_content" 
+	    	android:layout_height="wrap_content"
+	    	android:textSize="20sp"
+	    	android:textColor="#FFFFFFFF">
+	    </TextView>
+	    <Button 
+			android:text="@string/ranking" 
+			android:id="@+id/branking" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content">
+		</Button>
+		<Button 
+			android:text="@string/guardarPuntuacion" 
+			android:id="@+id/bguardar" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content">
+		</Button>
+			
+		
+	</LinearLayout>
+	<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+	
+	<LinearLayout 
+		xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent"
+	    android:orientation="vertical" 
+	    android:layout_height="fill_parent">
+	    <LinearLayout 
+			xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:layout_width="fill_parent"
+		    android:orientation="horizontal" 
+		    android:layout_height="wrap_content">   
+		
+			<TextView 
+		    	android:text="@string/ovejas" 
+		    	android:id="@+id/textView1" 
+		    	android:layout_width="wrap_content" 
+		    	android:layout_height="wrap_content">
+		    </TextView>
+			<Button android:text="0" android:id="@+id/bovejas0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:enabled="false"> </Button>
+			<Button android:text="1-3" android:id="@+id/bovejas13" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+			<Button android:text="4-5" android:id="@+id/bovejas45" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+			<Button android:text="6-7" android:id="@+id/bovejas67" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+			<Button android:text="8+" android:id="@+id/bovejas8" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+		</LinearLayout>
+	    <LinearLayout 
+			xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:layout_width="fill_parent"
+		    android:orientation="horizontal" 
+		    android:layout_height="wrap_content">   
+		
+			<TextView 
+		    	android:text="@string/jabalis" 
+		    	android:id="@+id/textView1" 
+		    	android:layout_width="wrap_content" 
+		    	android:layout_height="wrap_content">
+		    </TextView>
+			<Button android:text="0" android:id="@+id/bjabalis0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:enabled="false"></Button>
+			<Button android:text="1-2" android:id="@+id/bjabalis12" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+			<Button android:text="3-4" android:id="@+id/bjabalis34" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+			<Button android:text="5-6" android:id="@+id/bjabalis56" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+			<Button android:text="7+" android:id="@+id/bjabalis7" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+		</LinearLayout>
+	    <LinearLayout 
+			xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:layout_width="fill_parent"
+		    android:orientation="horizontal" 
+		    android:layout_height="wrap_content">   	
+			<TextView 
+		    	android:text="@string/vacas" 
+		    	android:id="@+id/textView1" 
+		    	android:layout_width="wrap_content" 
+		    	android:layout_height="wrap_content">
+		    </TextView>
+			<Button android:text="0" android:id="@+id/bvacas0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:enabled="false"></Button>
+			<Button android:text="1" android:id="@+id/bvacas1" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+			<Button android:text="2-3" android:id="@+id/bvacas23" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+			<Button android:text="4-5" android:id="@+id/bvacas45" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+			<Button android:text="6+" android:id="@+id/bvacas6" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+		</LinearLayout>
+	    <LinearLayout 
+			xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:layout_width="fill_parent"
+		    android:orientation="horizontal" 
+		    android:layout_height="wrap_content">   	
+			<TextView 
+		    	android:text="@string/cereales" 
+		    	android:id="@+id/textView1" 
+		    	android:layout_width="wrap_content" 
+		    	android:layout_height="wrap_content">
+		    </TextView>
+			<Button android:text="0" android:id="@+id/bcereales0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:enabled="false"></Button>
+			<Button android:text="1-3" android:id="@+id/bcereales13" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+			<Button android:text="4-5" android:id="@+id/bcereales45" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+			<Button android:text="6-7" android:id="@+id/bcereales67" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+			<Button android:text="8+" android:id="@+id/bcereales8" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+		</LinearLayout>
+	    <LinearLayout 
+			xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:layout_width="fill_parent"
+		    android:orientation="horizontal" 
+		    android:layout_height="wrap_content">   	
+			<TextView 
+		    	android:text="@string/hortalizas" 
+		    	android:id="@+id/textView1" 
+		    	android:layout_width="wrap_content" 
+		    	android:layout_height="wrap_content">
+		    </TextView>
+			<Button android:text="0" android:id="@+id/bhortalizas0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:enabled="false"></Button>
+			<Button android:text="1" android:id="@+id/bhortalizas1" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+			<Button android:text="2" android:id="@+id/bhortalizas2" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+			<Button android:text="3" android:id="@+id/bhortalizas3" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+			<Button android:text="4+" android:id="@+id/bhortalizas4" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+		</LinearLayout>
+		    <LinearLayout 
+			xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:layout_width="fill_parent"
+		    android:orientation="horizontal" 
+		    android:layout_height="wrap_content">   	
+			<TextView 
+		    	android:text="@string/campos" 
+		    	android:id="@+id/textView1" 
+		    	android:layout_width="wrap_content" 
+		    	android:layout_height="wrap_content">
+		    </TextView>
+			<Button android:text="0-1" android:id="@+id/bcampos01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:enabled="false"></Button>
+			<Button android:text="2" android:id="@+id/bcampos2" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+			<Button android:text="3" android:id="@+id/bcampos3" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+			<Button android:text="4" android:id="@+id/bcampos4" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+			<Button android:text="5+" android:id="@+id/bcampos5" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+		</LinearLayout>
+		    <LinearLayout 
+			xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:layout_width="fill_parent"
+		    android:orientation="horizontal" 
+		    android:layout_height="wrap_content">   	
+			<TextView 
+		    	android:text="@string/pastos" 
+		    	android:id="@+id/textView1" 
+		    	android:layout_width="wrap_content" 
+		    	android:layout_height="wrap_content">
+		    </TextView>
+			<Button android:text="0" android:id="@+id/bpastos0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:enabled="false"></Button>
+			<Button android:text="1" android:id="@+id/bpastos1" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+			<Button android:text="2" android:id="@+id/bpastos2" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+			<Button android:text="3" android:id="@+id/bpastos3" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+			<Button android:text="4+" android:id="@+id/bpastos4" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+		</LinearLayout>
+		 <LinearLayout 
+			xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:layout_width="fill_parent"
+		    android:orientation="horizontal" 
+		    android:layout_height="wrap_content">   	
+			<TextView 
+		    	android:text="@string/establos" 
+		    	android:id="@+id/textView1" 
+		    	android:layout_width="wrap_content" 
+		    	android:layout_height="wrap_content">
+		    </TextView>
+			<Button android:text="0" android:id="@+id/bestablos0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:enabled="false"></Button>
+			<Button android:text="1" android:id="@+id/bestablos1" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+			<Button android:text="2" android:id="@+id/bestablos2" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+			<Button android:text="3" android:id="@+id/bestablos3" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+			<Button android:text="4" android:id="@+id/bestablos4" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+			<Button android:text="5" android:id="@+id/bestablos5" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+		</LinearLayout>
+		
+		    <LinearLayout 
+			xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:layout_width="fill_parent"
+		    android:orientation="horizontal" 
+		    android:layout_height="wrap_content">   	
+			<TextView 
+		    	android:text="@string/libres" 
+		    	android:id="@+id/textView1" 
+		    	android:layout_width="wrap_content" 
+		    	android:layout_height="wrap_content">
+		    </TextView>
+			<Button android:text="0" android:id="@+id/blibres0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:enabled="false"></Button>
+			<Button android:text="1" android:id="@+id/blibres1" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+			<Button android:text="2" android:id="@+id/blibres2" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+			<Button android:text="3" android:id="@+id/blibres3" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+			<Button android:text="4" android:id="@+id/blibres4" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+			<Button android:text="5" android:id="@+id/blibres5" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+			<Button android:text="6" android:id="@+id/blibres6" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+			<Button android:text="7" android:id="@+id/blibres7" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+			<Button android:text="8+" android:id="@+id/blibres8" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>		
+		</LinearLayout>
+		<LinearLayout 
+			xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:layout_width="fill_parent"
+		    android:orientation="horizontal" 
+		    android:layout_height="wrap_content">   	
+			<TextView 
+		    	android:text="@string/personas" 
+		    	android:id="@+id/textView1" 
+		    	android:layout_width="wrap_content" 
+		    	android:layout_height="wrap_content">
+		    </TextView>
+			<Button android:text="2" android:id="@+id/bpersonas2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:enabled="false"></Button>
+			<Button android:text="3" android:id="@+id/bpersonas3" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+			<Button android:text="4" android:id="@+id/bpersonas4" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+			<Button android:text="5" android:id="@+id/bpersonas5" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+		</LinearLayout>
+		<LinearLayout 
+			xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:layout_width="fill_parent"
+		    android:orientation="horizontal" 
+		    android:layout_height="wrap_content">   	
+			<TextView 
+		    	android:text="@string/mendigos" 
+		    	android:id="@+id/textView1" 
+		    	android:layout_width="wrap_content" 
+		    	android:layout_height="wrap_content">
+		    </TextView>
+			<Button android:text="0" android:id="@+id/bmendigos0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:enabled="false"></Button>
+			<Button android:text="1" android:id="@+id/bmendigos1" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+			<Button android:text="2" android:id="@+id/bmendigos2" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+			<Button android:text="3" android:id="@+id/bmendigos3" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+			<Button android:text="4" android:id="@+id/bmendigos4" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>				
+		</LinearLayout>	
+		    
+		   	<LinearLayout 
+			xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:layout_width="fill_parent"
+		    android:orientation="horizontal" 
+		    android:layout_height="wrap_content">	    
+			<TextView 
+		    	android:text="@string/casa" 
+		    	android:id="@+id/textView1" 
+		    	android:layout_width="wrap_content" 
+		    	android:layout_height="wrap_content">
+		    </TextView>
+		    <Spinner 
+		    	android:id="@+id/elegir_habs" 
+		    	android:layout_width="wrap_content" 
+		    	android:layout_height="wrap_content"
+		    	android:prompt="@string/tipo_habitaciones">
+		    </Spinner>
+			<Button android:text="2" android:id="@+id/bhabitaciones2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:enabled="false"></Button>
+			<Button android:text="3" android:id="@+id/bhabitaciones3" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+			<Button android:text="4" android:id="@+id/bhabitaciones4" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+			<Button android:text="5" android:id="@+id/bhabitaciones5" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+			
+	   	</LinearLayout>
+	   	<LinearLayout 
+			xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:layout_width="fill_parent"
+		    android:orientation="horizontal" 
+		    android:layout_height="wrap_content">   
+		    
+		    <Button 
+		    	android:text="@string/calcularCartas" 
+		    	android:id="@+id/botonCalcularCartas" 
+		    	android:layout_width="wrap_content" 
+		    	android:layout_height="wrap_content">
+		    </Button>
+		    
+		    <TextView 
+		    	android:text="" 
+		    	android:id="@+id/Txtpuntoscartas" 
+		    	android:layout_width="wrap_content" 
+		    	android:layout_height="wrap_content">
+		    </TextView>
+		    <TextView 
+		    	android:text="0" 
+		    	android:id="@+id/puntosCartas" 
+		    	android:layout_width="wrap_content" 
+		    	android:layout_height="wrap_content">
+		    </TextView>	
+				
+	   	</LinearLayout>
+	   	<Button 
+			android:text="@string/salir" 
+			android:id="@+id/bcerrar" 
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content">
+			</Button>
+		</LinearLayout>
+	</ScrollView>
+	
+</LinearLayout>
+
