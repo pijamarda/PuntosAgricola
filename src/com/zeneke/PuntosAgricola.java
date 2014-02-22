@@ -26,6 +26,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+import com.google.android.gms.ads.*;
 
 
 public class PuntosAgricola extends Activity 
@@ -1089,6 +1090,16 @@ public class PuntosAgricola extends Activity
 	    		finish();    		
 	    	}
 	    });
+
+        // Look up the AdView as a resource and load a request.
+        AdView adView = (AdView)this.findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder()
+                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+                //.addTestDevice(TEST_DEVICE_ID)
+                //cara crater
+                .build();
+        adView.loadAd(adRequest);
+
     }
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data)
